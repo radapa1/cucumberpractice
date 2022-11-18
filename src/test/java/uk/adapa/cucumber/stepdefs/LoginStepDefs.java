@@ -6,6 +6,7 @@ import io.cucumber.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class LoginStepDefs {
 
@@ -18,6 +19,7 @@ public class LoginStepDefs {
 
         WebDriverManager.chromedriver().setup();
       driver = new ChromeDriver();
+      driver = new FirefoxDriver();
         driver.manage().window().maximize();
         driver.get("https://www.gov.uk/");
 
